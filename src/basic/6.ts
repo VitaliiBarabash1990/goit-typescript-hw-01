@@ -21,5 +21,5 @@ interface User {
 	name: string;
 	age: number;
 	emails: string;
-	address?: { city?: string; country?: string };
+	address?: { city: string; country: string };
 }

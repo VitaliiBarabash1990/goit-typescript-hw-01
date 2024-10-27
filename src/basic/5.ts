@@ -3,16 +3,15 @@
 // чи вихідний.
 
 enum DayOfWeek {
-	Monday = "true",
-	Tuesday = "true",
-	Wednesda = "true",
-	Thursday = "true",
-	Friday = "true",
-	Saturday = "false",
-	Sunday = "false",
+	Monday,
+	Tuesday,
+	Wednesday,
+	Thursday,
+	Friday,
+	Saturday,
+	Sunday,
 }
 
-const isWeekend = (day: DayOfWeek) => {
-	return `The day of ${day}.`;
+const isWeekend = (day: DayOfWeek): boolean => {
+	return day === DayOfWeek.Saturday || day === DayOfWeek.Sunday;
 };
-console.log(isWeekend(DayOfWeek.Monday));
